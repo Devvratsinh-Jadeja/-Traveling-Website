@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Preeti Holidays - Home</title>
+  <link rel="shortcut icon" href="tab1.svg" type="image/svg+xml">
+<style>
+    /* Background for entire page */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('bghomepage.svg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    /* Top Header */
+    headers {
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: rgba(0, 0, 0, 0.85);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    /* Header */
+    header {
+      max-width: 300px;
+      border-radius: 10px;
+      text-align: center;
+      margin: 60px auto;
+      padding: 60px auto;
+      background-color: rgba(255, 255, 255, 0.8)
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1.2em;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      margin: 20px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* About Section */
+    .about {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+    }
+
+    .about h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #16a085;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    /* Gallery */
+    .gallery {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 10px;
+    }
+
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      color: #2c3e50;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(44, 62, 80, 0.9);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <headers>
+          <a href="new.html" class="logo">
+            <img src="preeti (1).svg" alt="Preeti Holidays" width="250px" height="80px">
+          </a>   
+      <nav>
+      <ul>
+        <li><a href="new.html">HOME</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="destination.html">DESTINATION</a></li>
+        <li><a href="package.html">PACKAGES</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </headers>
+
+  <!-- Header -->
+  <header>
+    <p>Discover | Adventure | Explore | Enjoy</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="Beach.jpg" alt="Beach">
+    <img src="Adventure.jpg" alt="Adventure">
+    <img src="Luxury Travel.jpg" alt="Luxury Travel">
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <p>
+      At <strong>Preeti Holidays</strong>, we believe that travel is more than just a journey — 
+      it’s about creating lifelong memories. From serene beach getaways to adrenaline-pumping 
+      adventure trips and luxurious escapes, we craft unique travel experiences for everyone. 
+      Whether you want to relax, explore, or indulge in luxury, Preeti Holidays is your perfect travel partner.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h2>Travel Highlights</h2>
+    <div class="gallery-grid">
+      <img src="Tropical Beach.jpg" alt="Tropical Beach">
+      <img src="Mountain Adventure.jpg" alt="Mountain Adventure">
+      <img src="Luxury Resort.jpg" alt="Luxury Resort">
+      <img src="Safari Adventure.jpg" alt="Safari Adventure">
+      <img src="Island Getaway.jpg" alt="Island Getaway">
+      <img src="City Lights.jpg" alt="City Lights">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; cipheren technology | Designed for Travel Lovers</p>
+  </footer>
+</body>
+</html>
+  

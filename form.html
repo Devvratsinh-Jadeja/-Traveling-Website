@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Give your information - Tourly</title>
+  <link rel="shortcut icon" href="tab1.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Body */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('bghomepage.svg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+    }
+
+    /* Header */
+    header {
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: rgba(0, 0, 0, 0.8);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* Transparent Container */
+    .container {
+      max-width: 650px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: black;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 500;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+      color: black;
+      font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: black;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background: #1e90ff;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0b74d9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      margin-top: 60px;
+    }
+
+    /* Phone Form Styling */
+    .phone-form {
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .phone-form label {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="preeti (1).svg" alt="Preeti Holidays" class="logo" width="250px" height="80px">
+    <nav>
+      <ul>
+        <li><a href="new.html">HOME</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="destination.html">DESTINATION</a></li>
+        <li><a href="package.html">PACKAGES</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contactus.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Submit Your Information</h1>
+    <form action="submit-contact.html" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <div class="phone-form">
+        <label for="country-code">Country:</label>
+        <select id="country-code" name="country-code">
+          <option value="+1">🇺🇸 USA (+1)</option>
+          <option value="+44">🇬🇧 UK (+44)</option>
+          <option value="+91" selected>🇮🇳 India (+91)</option>
+          <option value="+61">🇦🇺 Australia (+61)</option>
+          <option value="+81">🇯🇵 Japan (+81)</option>
+          <option value="+49">🇩🇪 Germany (+49)</option>
+        </select>
+
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" placeholder="Enter phone number" required>
+      </div>
+
+      <label for="message">Your Message about destination</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" formaction="send message.html">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    © cipheren technology. All rights reserved.
+  </footer>
+
+</body>
+</html>
