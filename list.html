@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Destination - Tourly</title>
+  <link rel="shortcut icon" href="tab1.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('bghomepage.svg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+       padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: rgba(0, 0, 0, 0.85);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 650px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    select, input[type="checkbox"] {
+      margin-top: 10px;
+    }
+
+    .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .checkbox-group input {
+      margin-right: 10px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+      padding: 12px;
+      background: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0b74d9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="preeti (1).svg" alt="Preeti Holidays" class="logo" alt="Preeti Holidays" width="250px" height="80px">
+   <nav>
+      <ul>
+        <li><a href="new.html">HOME</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="destination.html">DESTINATION</a></li>
+        <li><a href="package.html">PACKAGES</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contactus.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Select Your Destination</h1>
+    
+    <form action="submit.html" method="POST">
+      <label for="main-destination">Choose a main destination:</label>
+      <select id="main-destination" name="main_destination" required>
+        <option value="">-- Select a destination --</option>
+        <option value="paris">Italy</option>
+        <option value="tokyo">Dubai</option>
+        <option value="newyork">Japan</option>
+        <option value="rome">Rome</option>
+        <option value="sydney">Sydney, Australia</option>
+        <option value="dubai">Spain/option>
+      </select>
+
+      <label>Optional places you’d like to visit:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="optional_destinations[]" value="bali">Italy</label>
+        <label><input type="checkbox" name="optional_destinations[]" value="london">Dubai</label>
+        <label><input type="checkbox" name="optional_destinations[]" value="cape_town">Japan</label>
+        <label><input type="checkbox" name="optional_destinations[]" value="barcelona"> Barcelona, Spain</label>
+      </div>
+
+      <button type="submit" formaction="package.html">Submit Selection</button></a>
+    </form>
+  </div>
+
+  <footer>
+    © cipheren technology. All rights reserved.
+  </footer>
+
+</body>
+</html>
